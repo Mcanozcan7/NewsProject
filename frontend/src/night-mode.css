@@ -1,0 +1,75 @@
+body #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  body.night-mode {
+    background-image: url(images/11507025.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  #root .logo.night-mode {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  #root .logo:hover {
+    filter: drop-shadow(0 0 2em #8085e0aa);
+  }
+  
+  #root .logo.react:hover {
+    filter: drop-shadow(0 0 2em #c4c6c7aa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    #root a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  #root .card.night-mode {
+    padding: 2em;
+  }
+  
+  #root .read-the-docs.night-mode {
+    color: #888;
+  }
+  
+  .switch-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 30px;
+  }
+
+  
+/* .switch-container button {
+    background-color: orangered;
+    color: #fff;
+    border-radius: 100px; 
+    padding: 8px 16px; 
+  } */
+
+  .switch-container button {
+    background: none; /* Arka planı kaldırmak için */
+    border: none; /* Kenarlığı kaldırmak için */
+    padding: 0; /* Boşlukları kaldırmak için */
+    cursor: pointer; /* Fare imlecini göstermek için */
+  }
