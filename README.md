@@ -1,0 +1,2 @@
+# NewsProject
+ React & Django used.
